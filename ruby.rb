@@ -1,4 +1,6 @@
 class Colors
+  include Enumerable
+
   def each
     yield "red"
     yield "green"
@@ -9,6 +11,4 @@ end
 
 
 color =  Colors.new
-color.each do |color|
-  puts color
-end
+puts color.map {|c| c.upcase}.inspect
