@@ -12,3 +12,4 @@ end
 
 color =  Colors.new
 puts color.map {|c| c.upcase}.inspect
+puts color.select {|c| c.length.even?}.inspect
